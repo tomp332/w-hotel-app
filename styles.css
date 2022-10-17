@@ -16,7 +16,7 @@
     --purple-transparent: rgba(31, 164, 181, .8);
     --purple-transparent-alt: rgba(31, 164, 181, 0.3);
     --purple-light: #9bcbcb;
-    --yellow-solid: #e89733;
+    --yellow-solid: #ecac5f;
     --gradient-color: linear-gradient(to right, var(--blue-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--blue-solid));
 }
@@ -298,9 +298,13 @@ section{
 
 }
 
+.hotels{
+    background-color: #cbd9e4;
+}
+
 .heading{
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     text-transform: uppercase;
 
 }
@@ -317,6 +321,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2.5rem;
+    
 
 }
 
@@ -418,8 +423,7 @@ section{
 
 /*rooms section styles*/
 .rooms{
-    background-color: #f2f6f9;
-
+        background-color: #dee4e8;
 }
 
 .image-wrao{
@@ -447,7 +451,7 @@ section{
 }
 
 .room-name{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     background-color: var(--yellow-solid);
     color: #fff;
     padding: .5rem 2rem;
@@ -490,9 +494,11 @@ section{
 .contact-content{
     display: flex;
     justify-content: center;
-
 }
 
+.contact{
+        background-color: #cbd9e4;
+}
 .traveller-wrap{
     display: none;
 
@@ -779,4 +785,43 @@ section{
     }
 }
 
+/*about styles*/
+.about{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/the_paradise_bg.jpg) center no-repeat;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+
+}
+
+.about::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: var(--purple-transparent-alt);
+    z-index: -1;
+
+}
+
+
+.about .paragraph{
+    color: #a5a5a5;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+
+}
+
+
+.about .title{
+    font-size: 8rem;
     
+}
