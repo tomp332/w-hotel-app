@@ -49,6 +49,8 @@ section{
 
 }
 
+
+
 /*Reusable styles*/
 .container{
     width: 100%;
@@ -70,6 +72,7 @@ section{
 
 .btn-purple{
     background-color: var(--purple-solid);
+    transition: background-color .5s;
 
 }
 
@@ -247,7 +250,7 @@ section{
 
 /*Booking section styles*/
 .booking{
-    background-image: var(--gradient-color);
+    background-image: var(--gradient-color-alt);
 
 }
 
@@ -277,9 +280,9 @@ section{
     color: #a5a5a5;
     letter-spacing: 2px;
     font-family: "Open Sans", sans-serif;
-    resize: none;
-
+      /*resize: none;*/
 }
+ 
 
 ::placeholder{
     color: inherit;
