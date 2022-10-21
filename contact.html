@@ -23,7 +23,7 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link"Home></a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a>
@@ -36,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login/Sign up</a>
                     </li>
                 </ul>
             </nav>
@@ -51,23 +54,23 @@
                 <div class="traveller-wrap">
                     <img src="./images/traveler.png" alt="">
                 </div>
-                <form action="" class="form contact-form">
+                <form  class="form contact-form" onsubmit="sendEmail(); reset(); return false">
                     <div class="input-group-wrap">
                         <div class="input-group">
-                            <input type="text" class="input" placeholder="Name" required>
+                            <input id="name" type="text" class="input" placeholder="Name" required>
                             <span class="bar"></span>
                         </div>
                         <div class="input-group">
-                            <input type="email" class="input" placeholder="E-mail" required>
+                            <input id="email" type="email" class="input" placeholder="E-mail" required>
                             <span class="bar"></span>
                         </div>
                     </div>
                         <div class="input-group">
-                            <input type="text" class="input" placeholder="Subject" required>
+                            <input id="subject" type="text" class="input" placeholder="Subject" required>
                             <span class="bar"></span>
                         </div>
                         <div class="input-group">
-                            <textarea class="input" cols="30" rows="8" placeholder="Message" required></textarea>
+                            <textarea id="message" class="input" cols="30" rows="8" placeholder="Message" required></textarea>
                             <span class="bar"></span>
                         </div>
                     <botton type="submit" class="btn form-btn btn-purple">Send Message

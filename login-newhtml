@@ -37,61 +37,72 @@
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login/Sign up</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
-    <section class="rooms">
-        <div class="container">
-            <h5 class="section-head">
-                <span class="heading">Rooms</Ri:a></span>
-                <span class="sub-heading">Paradise Hotel</span>
-            </h5>
-            <div class="grid-item featured-rooms">
-
-                <div class="image-wrap">
-                    <h5 class="room-name">Ocean view suite</h5>
-
-                    <img class="room-image" src="./images/room_3.jpg" alt="">
-                </div>
-                <div class="room-info-wrap">
-                    <span class="room-price">$250 <span class="per-night">per night</span></span>
-                    <p class="paragraph">
-                        The biggest suite in the hotel.
-                        has flat screen TV, ocean view, queens size bed and a pourch.
-                    </p>
-                    <a href="" class="btn rooms-btn">BOOK NOW &rarr;</a>
-                </div>
-            </div>
-
-            <div class="grid-item featured-rooms">
-
-                <div class="image-wrap">
-                    <h5 class="room-name">Luxurious family suite</h5>
-
-                    <img class="room-image" src="./images/room_9.jpg" alt="">
-                </div>
-                <div class="room-info-wrap">
-                    <span class="room-price">$400 <span class="per-night">per night</span></span>
-                    <p class="paragraph">
-                        The biggest suite in the hotel.
-                        has flat screen TV, ocean view, queens size bed and a pourch.
-                    </p>
-                    <a href="" class="btn rooms-btn">BOOK NOW &rarr;</a>
-                </div>
-                
-            </div>
-         </div>
-        
-</section>
-
-
-
+    <div class="login_container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div> 
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="password">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <button class="form__button" type=""submit>continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link href="./" id="linkCreateAccount" class="form__link">Dont have an account? Create Account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">create Account</h1>
+            <div class="form__message form__message--error"></div> 
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="E-mail Address">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="password">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>  
+            <button class="form__button" type=""submit>continue</button>
+            <p class="form__text">
+                <a class="form__link href="./" id="linkLogin" class="form__link">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
 
 
-    <footer class="footer">
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-content-brand">

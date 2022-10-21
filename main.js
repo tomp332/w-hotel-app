@@ -13,4 +13,19 @@ hamburgerMenu.addEventListener('click',function() {
     
 })
 
+function sendEmail(){
+    Email.send({
+         Host : "smtp.gmail.com",
+         Username : "liralgazi@gmail.com",
+         Password : "207883661La",
+         To : "liralgazi@gmail.com",
+         From : document.getElementById("email").value,
+         Subject : document.getElementById("subject").value,
+         Body : "Name :" 
+          }).then(
+            message => alert(message)
+            );
+
+}
+
 
