@@ -8,6 +8,37 @@
     <title>Login/ Sign Up</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="./images/w_logo.png" alt="">
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="login_container">
         <form class="form" id="login">
             <h1 class="form__title">Login</h1>
@@ -29,7 +60,7 @@
             </p>
         </form>
         <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">create Account</h1>
+            <h1 class="form__title">Create Account</h1>
             <div class="form__message form__message--error"></div> 
             <div class="form__input-group">
                 <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
