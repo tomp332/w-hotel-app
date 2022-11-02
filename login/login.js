@@ -76,11 +76,6 @@ hamburgerMenu.addEventListener('click',function() {
     
 })
 
-//login verification
-const userEmail = document.getElementById("user-email")
-const userPassword = document.getElementById("user-password")
-const userLoginButton = document.getElementById("btn__login")
-const content = document.getElementById("content")
 
 
 //google sign up
